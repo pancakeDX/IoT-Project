@@ -1,1 +1,1 @@
-module.exports.sqlWriteValue = 'INSERT INTO livingroom.temperature(temperature) VALUES($1) RETURNING *';
+module.exports.sqlWriteValue = 'INSERT INTO livingroom.temperature_wilsonliao(temperature) VALUES($1) RETURNING *';

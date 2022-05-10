@@ -16,8 +16,9 @@ pool.on('error', () => logger('Lost PG connection'));
 const client = mqtt.connect(mqttUri);
 
 // Appends a timestamp to the topic as a sequence number so that students can distinguish their topics from one another.
-const topicSequence = Math.floor(Date.now() / 1000);
-const topic = 'livingroom/temperature/' + topicSequence.toString();  // livingroom/temperature/1586237495
+// const topicSequence = Math.floor(Date.now() / 1000);
+// const topic = 'livingroom/temperature/' + topicSequence.toString();  // livingroom/temperature/1586237495
+const topic = 'livingroom/temperature/wilson-liao';
 
 client.on('connect', (connack) => {
   logger('Connected to IoTHub');
