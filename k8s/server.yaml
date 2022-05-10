@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: server-sk-chen
+  name: server-wilson-liao
   labels:
     name: assignment
 spec:
@@ -10,16 +10,16 @@ spec:
   selector:
     matchLabels:
       component: server
-      student: sk-chen
+      student: wilson-liao
   template:
     metadata:
       labels:
         component: server
-        student: sk-chen
+        student: wilson-liao
     spec:
       containers:
         - name: server
-          image: ensaas/iot-home-server:2.1.0
+          image: wilsonliao/iot-home-server:2.1.0
           imagePullPolicy: Always
           ports:
             - containerPort: 3000

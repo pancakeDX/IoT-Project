@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: mqtt-sk-chen
+  name: mqtt-wilson-liao
   labels:
     name: assignment
 spec:
@@ -10,16 +10,16 @@ spec:
   selector:
     matchLabels:
       component: mqtt
-      student: sk-chen
+      student: wilson-liao
   template:
     metadata:
       labels:
         component: mqtt
-        student: sk-chen
+        student: wilson-liao
     spec:
       containers:
         - name: mqtt
-          image: ensaas/iot-home-mqtt:2.0.0
+          image: wilsonliao/iot-home-mqtt:2.0.0
           imagePullPolicy: Always
           resources:
             limits:

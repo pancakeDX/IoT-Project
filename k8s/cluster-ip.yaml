@@ -1,14 +1,15 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: server-sk-chen
+  name: server-wilson-liao
   labels:
     name: assignment
 spec:
   type: ClusterIP
   selector:
     component: server
-    student: sk-chen
+    student: wilson-liao
   ports:
     - port: 3000
+      name: http
       targetPort: 3000
